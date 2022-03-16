@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widget/card_item_widget.dart';
 
 class ItemPage extends StatelessWidget {
   const ItemPage(
@@ -30,28 +31,7 @@ class ItemPage extends StatelessWidget {
         ),
         body: Container(
           margin: const EdgeInsets.all(8),
-          child: Card(
-            child: Container(
-              margin: const EdgeInsets.all(8),
-              child: Row(
-                children: [
-                  Expanded(child: Text(name)),
-                  Expanded(
-                    child: Text(
-                      quantity.toString(),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  Expanded(
-                    child: Text(
-                      price.toString(),
-                      textAlign: TextAlign.end,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
+          child: CardItemWidget(name: name, quantity: quantity, price: price),
         ),
       ),
     );
