@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
             },
           );
         }
-        assert(false, 'Need to implement ${settings.name}');
+        assert(false, '${settings.name}');
         return null;
       },
     );
