@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
         '/': (context) => HomePage(),
       },
       onGenerateRoute: (settings) {
-        // If you push the PassArguments route
         if (settings.name == ItemPage.routeName) {
           final args = settings.arguments as Item;
           return MaterialPageRoute(
